@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSE Student Information System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#addStudent">Add Student</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Welcome to the CSE Student Information System. Here you can view and manage student information.</p>
+        </section>
+
+        <section id="students">
+            <h2>Student List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Year</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+                    <!-- Student entries will go here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="addStudent">
+            <h2>Add Student</h2>
+            <form id="addStudentForm">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" required>
+                
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" required>
+                
+                <label for="studentYear">Year:</label>
+                <input type="text" id="studentYear" required>
+                
+                <label for="studentCGPA">CGPA:</label>
+                <input type="text" id="studentCGPA" required>
+                
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="contactName">Name:</label>
+                <input type="text" id="contactName" required>
+                
+                <label for="contactEmail">Email:</label>
+                <input type="email" id="contactEmail" required>
+                
+                <label for="contactMessage">Message:</label>
+                <textarea id="contactMessage" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CSE Student Information System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
